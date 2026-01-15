@@ -1,1 +1,99 @@
-tes page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Pertama</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo_revou.png" alt="RevoU Logo" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Our Profile</a>
+            <a href="#">Portofolio</a>
+            <a href="#">Message Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1>Hi Rijal, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </section>
+
+        <div class="placeholder-img">
+            1366x578
+        </div>
+
+        <section class="headquarter">
+            <h2>Our Headquarter</h2>
+            <div class="location-container">
+                <div class="location-item">
+                    <div class="circle"></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="location-item">
+                    <div class="circle"></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="location-item">
+                    <div class="circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="message-us">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <span>:</span>
+                        <input type="text" id="nama" placeholder="Nama" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl_lahir">Tanggal Lahir</label>
+                        <span>:</span>
+                        <input type="date" id="tgl_lahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin</label>
+                        <span>:</span>
+                        <div class="radio-group">
+                            <input type="radio" id="laki" name="gender" value="Laki-Laki" checked>
+                            <label for="laki">Laki-Laki</label>
+                            <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                            <label for="perempuan">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <span>:</span>
+                        <textarea id="pesan" placeholder="Pesan" required></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
+
+                <div class="result-box" id="resultBox">
+                    <p id="res-time">Current time : -</p>
+                    <p><strong>Nama</strong> : <span id="res-nama">-</span></p>
+                    <p><strong>Tanggal Lahir</strong> : <span id="res-tgl">-</span></p>
+                    <p><strong>Jenis Kelamin</strong> : <span id="res-gender">-</span></p>
+                    <p><strong>Pesan</strong> : <span id="res-pesan">-</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By RevoU</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
